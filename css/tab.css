@@ -1,0 +1,63 @@
+/*设置超链接样式*/
+a {
+	color: #5086a5; 
+	text-decoration: none;
+	font-size: 12px;
+}
+a:hover {
+	color: #5086a5;
+	text-decoration: underline;
+	font-size: 12px;
+}
+
+a:visited {
+	color: #5086a5;
+	font-size: 12px;
+}
+
+/*整个tab层居中，宽度为600px*/
+#tabDiv {
+	margin:1em auto;
+	padding-bottom: 10px;
+	border-right: #b2c9d3 1px solid; 
+	border-top: #b2c9d3 1px solid; 
+	border-left: #b2c9d3 1px solid; 
+	border-bottom: #b2c9d3 1px solid;
+	background: #ffffff;
+}
+
+/*tab头的样式*/
+#tabsHead {
+	padding-left: 0px; 
+	height: 26px; 
+	background-color: #DEEBFF;
+	font-size: 1em; 
+	margin: 1px 0px 0px; 
+	color: #5086a5; 
+	line-height: 26px;
+}
+
+/*已选tab头（超链接）的样式*/
+.curtab  {
+	padding-top: 0px;
+	padding-right: 10px; 
+	padding-bottom: 0px; 
+	padding-left: 10px; 
+	border-right: #b2c9d3 1px solid; 
+	font-weight: bold; 
+	float: left;
+	cursor: pointer; 
+	background: #ffffff; 
+}
+
+/*未选tab头（超链接）的样式*/
+.tabs {
+	border-right: #c1d8e0 1px solid; 
+	padding-top: 0px;
+	padding-right: 10px; 
+	padding-bottom: 0px; 
+	padding-left: 10px; 
+	font-weight: normal; 
+	float: left;
+	cursor: pointer; 
+}

@@ -1,0 +1,10 @@
+.skin{ padding:10px; }
+.skin a{display:block; width:10px; height:9px; margin-right:10px; float:right; display:inline;cursor:pointer;}
+.skin_blue{ background:url(../skin/blue/images/skinBtn.gif) no-repeat;}
+.skin_blue2{ background:url(../skin/blue/images/skinBtn2.gif) no-repeat;}
+.skin_purple{ background:url(../skin/purple/images/skinBtn.gif) no-repeat;}
+.skin_purple2{ background:url(../skin/purple/images/skinBtn2.gif) no-repeat;}
+.skin_orange{ background:url(../skin/orange/images/skinBtn.gif) no-repeat;}
+.skin_orange2{ background:url(../skin/orange/images/skinBtn2.gif) no-repeat;}
+.skin_pink{ background:url(../skin/pink/images/skinBtn.gif) no-repeat;}
+.skin_pink2{ background:url(../skin/pink/images/skinBtn2.gif) no-repeat;}

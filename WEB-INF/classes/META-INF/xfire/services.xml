@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 客户数据下传  -->
+		<name>customService</name>
+		<serviceClass>com.gwall.webservice.custom.CustomInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.custom.CustomInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 装箱单拉式下传 -->
+		<name>getBoxNoService</name>
+		<serviceClass>com.gwall.webservice.box.GetBoxNoInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.box.GetBoxNoInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 交货单拉式下传 -->
+		<name>getDeliveryService</name>
+		<serviceClass>com.gwall.webservice.delivery.GetDeliveryInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.delivery.GetDeliveryInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<name>goodsService</name>
+		<serviceClass>com.gwall.webservice.goods.GoodsInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.goods.GoodsInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+    </service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 商品分仓下传 -->
+		<name>goodsWarehouseService</name>
+		<serviceClass>com.gwall.webservice.warehouse.GoodsWarehouseInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.warehouse.GoodsWarehouseInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 无来源单调拨下传 -->
+		<name>noSourceTransService</name>
+		<serviceClass>com.gwall.webservice.trans.NoSourceTransInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.trans.NoSourceTransInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 原采购订单退库过账拉式下传 -->
+		<name>oldPurchaseOrderDeliveryService</name>
+		<serviceClass>com.gwall.webservice.purchase.OldPurchaseOrderDeliveryInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.purchase.OldPurchaseOrderDeliveryInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 退货采购订单退库推式下传 -->
+		<name>purchaseOrderDeliveryService</name>
+		<serviceClass>com.gwall.webservice.purchase.PurchaseOrderDeliveryInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.purchase.PurchaseOrderDeliveryInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 交货单推式下传 -->
+		<name>sendDeliveryService</name>
+		<serviceClass>com.gwall.webservice.delivery.SendDeliveryInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.delivery.SendDeliveryInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+	<service xmlns="http://xfire.codehaus.org/config/1.0" xmlns:s="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+		<!-- 供应商主数据下传 -->
+		<name>supplierService</name>
+		<serviceClass>com.gwall.webservice.supplier.SupplierInterface</serviceClass>
+		<implementationClass>
+			com.gwall.webservice.supplier.SupplierInterfaceImpl
+		</implementationClass>
+		<scope>request</scope>
+	</service>
+</beans>

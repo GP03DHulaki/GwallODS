@@ -1,0 +1,132 @@
+.GUI_Form_Box {
+	font-size: 12px;
+}
+.GUI_Form_Box iframe{
+	display:none;
+}
+.GUI_Form_Page_left{
+	background:url(icons/left.png) no-repeat;
+}
+.GUI_Form_Page_lefts{
+	background:url(icons/lefts.png) no-repeat;
+}
+.GUI_Form_Page_right{
+	background:url(icons/right.png) no-repeat;
+}
+.GUI_Form_Page_rights{
+	background:url(icons/rights.png) no-repeat;
+}
+.GUI_Form_Page_number{
+	display:inline-block;
+	text-align: center;
+	cursor:default;
+	width:40px;
+}
+.GUI_Form_Menu_right_top{
+	BACKGROUND-IMAGE: url(icons/top.png);
+}
+.GUI_Form_Menu_right_down{
+	BACKGROUND-IMAGE: url(icons/down.png);
+}
+.GUI_Form_Page_left,.GUI_Form_Page_lefts,.GUI_Form_Page_right,.GUI_Form_Page_rights,
+.GUI_Form_Menu_right_down,.GUI_Form_Menu_right_top{
+	width:16px;height:16px;
+	cursor:pointer;display:inline-block;
+	text-align: center;
+	vertical-align: bottom;
+}
+.GUI_Form_Box table {
+	text-align:center;
+	border-collapse: collapse;
+	padding: 0px;
+	border: 0;
+	border-width: 0px 0 0 0px;
+	width: 100%;
+}
+.GUI_List{
+	width:100%;
+}
+.GUI_List table{
+	text-align:center;
+	border-collapse: collapse;
+	border:#3399FF 1px solid;
+	padding: 0px;
+	width: 100%;
+	table-layout:fixed;
+}
+.GUI_List_PageGo input{
+	text-align:center;
+	border-left:0px;border-top:0px;border-right:0px;border-bottom:1px;
+	font-size:4px;
+}
+.GUI_List table tr td{
+	border:#3399FF 1px solid;
+	font-size:13px;
+	white-space:nowrap;overflow:hidden;
+}
+.table_headbgcolor {
+	font-size: 12px;
+	BACKGROUND-IMAGE: url(icons/bg_hd.gif);
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.GUI_Form_Lable {
+	text-align: right;
+	vertical-align: middle;
+	font-size: 13px;
+	font-weight: bold;
+	width: 15%;
+	height: 25px;
+	background-color:#EAEAEC;
+}
+
+.GUI_Form_Value {
+	text-align: left;
+	vertical-align: middle;
+	font-size: 12px;
+	width: 35%;
+}
+
+.GUI_Form_Value textarea,select{
+	width: 90%;
+	font-size: 12px;
+}
+.GUI_Form_input {
+	width: 90%;
+	font-size: 12px;
+	background:url(icons/inputbg.gif);
+}
+.GUI_Form_TR_2{
+	background-color:#EAEAEC;
+}
+.GUI_Form_TR_Over{
+	cursor:pointer;
+	background-color:#C8E9FB;
+}
+.GUI_Form_TR_Click{
+	cursor:pointer;
+	background-color:#ACD6EE;
+}
+.GUI_Form_Btn {
+	text-align: center;
+	vertical-align: middle;
+	font-size: 12px;
+	padding:2px;
+}
+.GUI_Form_select_loading {
+	background:url(icons/selectLoading.gif) no-repeat;
+}
+.GUI_Form_select_refresh{
+	background:url(icons/selectRefresh.png) no-repeat;
+}
+.GUI_Form_YZ_false {
+	background:url(icons/fail.png) no-repeat;
+}
+.GUI_Form_YZ_true {
+	background:url(icons/succ.png) no-repeat;
+}
+.GUI_Form_select_loading,.GUI_Form_YZ_false,.GUI_Form_YZ_true,.GUI_Form_select_refresh{
+	width:15px;height:15px;
+	cursor:pointer;display:inline-block;
+	text-align: center;vertical-align: baseline;
+}

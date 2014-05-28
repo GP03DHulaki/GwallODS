@@ -1,0 +1,40 @@
+.GtabPage_center {
+	overflow: hidden;
+	clear: both;
+}
+#GtabPage_context {
+	border: #8db2e3 1px solid;
+	border-top-width: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#GtabPage_title {
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	background: url("GtabLine.gif") repeat-x bottom;
+	height: 25px;
+}
+#GtabPage_title div { 
+	cursor: pointer;
+	width: 94px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	background: url("GtabBtn.gif");
+}
+#GtabPage_title div.hover {
+	height: 25px !important;
+	font-weight: bold;
+}
+#GtabPage_title span {
+	height: 23px;
+	margin-top: 2px;
+	float: left;
+	width: 1px;
+	background: #8db3e4;
+}

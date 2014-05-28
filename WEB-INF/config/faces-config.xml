@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+
+	<navigation-rule>
+		<from-view-id>/main.jsp</from-view-id>
+		<navigation-case>
+			<from-action>#{LoginMB.login}</from-action>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/frame/main.jsf</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-action>#{LoginMB.login}</from-action>
+			<from-outcome>failure</from-outcome>
+			<to-view-id>/main.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+	<navigation-rule>
+		<from-view-id>/frame/welcome.jsp</from-view-id>
+		<navigation-case>
+			<from-action>#{bmb.search}</from-action>
+			<from-outcome>success</from-outcome>
+			<to-view-id>/frame/bulletin_view.jsp</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<navigation-rule>
+		<from-view-id>/insys/moplan/moplan_edit.jsp</from-view-id>
+		<navigation-case>
+			<from-action>#{moPlanMB.uploadFile}</from-action>
+			<from-outcome>result</from-outcome>
+			<to-view-id>/insys/moplan/result.jsf</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	
+	<!-- 登录管理 -->
+	<managed-bean>
+		<managed-bean-name>gmanage</managed-bean-name>
+		<managed-bean-class>com.gwall.core.Gmanage</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<!-- 登录管理 -->
+	<managed-bean>
+		<managed-bean-name>LoginMB</managed-bean-name>
+		<managed-bean-class>com.gwall.sys.LoginMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<!-- 作业调度 -->
+	<managed-bean>
+		<managed-bean-name>jobsMB</managed-bean-name>
+		<managed-bean-class>com.gwall.sys.JobsMB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+</faces-config>

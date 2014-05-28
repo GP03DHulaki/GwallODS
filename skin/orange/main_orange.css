@@ -1,0 +1,78 @@
+#tabDiv {
+	border: #FBCFA2 1px solid;
+	BACKGROUND: #ffffff;
+	overflow: hidden;
+	width: 100%;
+	POSITION: relative;
+}
+#tabsHead {
+	height: 18px;
+	background-image: url(../orange/images/tab-bg.gif);
+	BORDER-BOTTOM-COLOR: #FBCFA2;
+	color: #cedff;
+	line-height: 18px;
+	overflow: hidden;
+}
+
+.tabh_left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-image: url(../orange/images/scroll-left.gif);
+	background-position: 0px -3px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.tabh_right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 18px;
+	width: 18px;
+	background-image: url(../orange/images/scroll-right.gif);
+	background-position: 19px -3px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.tabh_left_disable {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	background-image: url(../orange/images/scroll-left.gif);
+	background-position: 0px -3px;
+	z-index: 1;
+	filter: alpha(opacity =  40);
+	opacity: 0.4;
+}
+
+.tabh_right_disable {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 18px;
+	width: 18px;
+	background-image: url(../orange/images/scroll-right.gif);
+	background-position: 19px -3px;
+	z-index: 1;
+	filter: alpha(opacity = 40);
+	opacity: 0.4;
+}
+
+#tabsHead_wrap {
+	height: 18px;
+	background-image: url(../orange/images/tab-bg.gif);
+	BORDER-BOTTOM-COLOR: #FBCFA2;
+	color: #cedff;
+	line-height: 18px;
+	margin-left: 18px;
+	margin-right: 18px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	default-lazy-init="true" 
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+
+	<!-- ************************************************Biz业务处理层******************************************************* -->
+	<!-- 用户登录业务处理 -->
+	<bean id="ilbiz" class="com.gwall.biz.impl.sys.LoginBizImpl">
+		<property name="loginDao" ref="logindao"></property>
+	</bean>
+	
+	<!-- 用户档案业务处理 -->
+	<bean id="userbiz" class="com.gwall.biz.impl.sys.UserBizImpl">
+		<property name="userDao" ref="userdao"></property>
+	</bean>
+	
+	<!-- 岗位权限配置业务处理 -->
+	<bean id="rolebiz" class="com.gwall.biz.impl.sys.RoleBizImpl">
+		<property name="roleDao" ref="roledao"></property>
+	</bean>	
+
+	<!-- ************************************************Dao数据库交互层****************************************************** -->
+
+	<!-- 用户登录dao -->
+	<bean id="logindao" class="com.gwall.dao.impl.sys.LoginDaoImpl"></bean>
+	
+	<!-- 用户登录dao -->
+	<bean id="userdao" class="com.gwall.dao.impl.sys.UserDaoImpl"></bean>
+	
+	<!-- 岗位权限dao -->
+	<bean id="roledao" class="com.gwall.dao.impl.sys.RoleDaoImpl"></bean>
+	
+</beans>

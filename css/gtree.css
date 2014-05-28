@@ -1,0 +1,48 @@
+div.box {
+    margin-left:20px;
+}
+
+span.folderMark {
+    font-family:"宋体";
+    cursor:pointer;
+    margin-right:5px;
+}
+
+span.folder {
+	color:#000000;
+	font-size:10pt;
+    cursor:pointer;
+}
+
+span.itemMark {
+    font-family:"宋体";
+    margin-right:5px;
+}
+
+span.item {
+	color:#000000;
+	font-size:10pt;
+    cursor:pointer;
+}
+
+span.stopMark {
+	background-color:#FF0000;
+    font-family:"宋体";
+    margin-right:5px;
+}
+
+span.stop {
+	font-size:10pt;
+	font-family:"宋体";
+    cursor:pointer;
+    color:#FF0000;
+
+}
+
+span.clickitem {
+	color:#FFFFFF;
+	font-size:10pt;
+	font-family:"宋体";
+	cursor:pointer;
+	background-color:#0A246A;
+}

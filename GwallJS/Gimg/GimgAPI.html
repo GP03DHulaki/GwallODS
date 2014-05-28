@@ -1,0 +1,141 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Gimg-API</title>
+		<style type="text/css">
+.prettyprint {
+	border: #73D1F7 2px solid;
+	font-size: 12;
+}
+
+cbody {
+	font-size: 12;
+}
+
+p {
+	font-size: 12;
+}
+</style>
+		<script>
+	
+</script>
+
+	</head>
+
+	<body>
+		<div class="cbody">
+			<div align="center">
+				<h2>
+					Gimg参数配置及用法
+				</h2>
+			</div>
+			<p></p>
+			<ol>
+				<li>
+					<h5>
+						版本说明
+					</h5>
+					<p>
+						兼容于IE8,FireFox,Coogle Chrome,Opera,搜狗.
+						<br>
+						文件:Gimg/images, Gimg/Gimg.js, Gimg/GimgCode.js,
+						Gimg/GimgAPI.html,imgManage.jsp,upFile.jsp,upImg/UpFile.java
+						<br>
+						Gimg.js为压缩文件,GimgCode.js为源码.
+						<br>
+						具体演示,请运行项目:Gwall_JS
+						<br>
+						演示地址:http://192.168.1.43:1519/Gwall_JS/Gtree.jsp 或
+						http://192.168.1.43:1519/Gwall_JS/ 进入后点击Gimg
+						<br>
+						将IP,端口,更改为自己的.不用localhost是因为ajax请求问题(其他机器访问会出错).
+						<br>
+						有任何问题,请发邮件至yk@gwall.cn
+					</p>
+				</li>
+
+				<li>
+					<h5>
+						全局参数含义 [Gimg.属性]
+					</h5>
+					<p>
+						备注：取值请调用函数,直接调用属性,要特殊处理.
+						<br>
+						以下属性,可以更改imgW,imgH,countW,countH.其他用于内部使用.
+					</p>
+					<pre class="prettyprint">
+W:0,	//当前界面的宽度
+H:0,	//当前界面的高度
+imgW:78,	//每个图片宽度
+imgH:88,	//每个图片高度
+countW:8,	//每行显示几个
+countH:3,	//显示几行
+selectedStr:"",	//选中的ID集合
+upFileID:1,	//上传文件ID
+isIE:false,	//是否IE
+selectPathList:"",	//已选图片的路径.
+
+</pre>
+
+				</li>
+				<li>
+					<h5>
+						设置已选择项 [多项]
+					</h5>
+					<p>
+						备注：应用场景是载入界面后,默认已选择的图片列表.调用Gimg.init("路径")进行设置已选项.
+					</p>
+
+					<pre class="prettyprint">
+
+window.onload = function() {
+	Gimg.init( "Gimg/images/101.jpg;Gimg/images/102.jpg;Gimg/images/103.jpg;Gimg/images/104.gif;" );
+}
+
+</pre>
+					<p>
+						备注：也可以调用以下方法进行设置.
+					</p>
+
+					<pre class="prettyprint">
+/**
+ * 设置默认选中的图片
+ * 
+ * @param pathList
+ *            路径为项目根文件夹开始到文件(如:images/007.jpg;images/008.gif;)以;分隔
+ * @return
+ */
+Gimg.setSelect("images/001.jpg;images/002.jpg;");
+
+</pre>
+				</li>
+				<li>
+					<h5>
+						获取已选择的图片路径 [多项]
+					</h5>
+					<p>
+						备注：返回值是,选择的图片路径并且以;分隔,
+					</p>
+					<pre class="prettyprint">
+
+Gtree.treeList["tree1"].selectedID;
+
+</pre>
+				</li>
+				<li>
+					<h5>
+						设置上传存放文件夹 [jsp]
+					</h5>
+					<p>
+						备注：Java代码,文件:upFile.jsp
+					</p>
+					<pre class="prettyprint">
+
+String path = "Gimg/images/";  //设置图片上传后存放位置.
+
+</pre>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

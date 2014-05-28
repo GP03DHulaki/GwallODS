@@ -1,0 +1,126 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Gtree-API</title>
+<style type="text/css">		
+		.prettyprint{border:#73D1F7 2px solid;font-size:12;}
+		cbody{font-size:12;}
+		p{font-size:12;}
+	button{
+		BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+	}
+	.button_out {
+		BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+	}
+	.button_over {
+		BORDER-RIGHT: #FF0000 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #FF0000 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#66CCFF); BORDER-LEFT: #FF0000 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #FF0000 1px solid
+	}
+</style>
+</head>
+<body>
+		<div class="cbody">
+			<div align="center"><h2>Gwin参数</h2></div>
+			<p></p>
+			<ol>
+				<li>
+					<h5>版本说明</h5>
+					<p>兼容于IE8,FireFox,Coogle Chrome,Opera,搜狗.<br>
+					文件:Gwin/images, Gwin/Gwin.js,Gwin/default.css, Gwin/GwinAPI.html<br>
+					具体演示,请运行项目:Gwall_JS<br>
+					演示地址:http://192.168.1.43:1519/Gwall_JS/Gwin.jsp 或 http://192.168.1.43:1519/Gwall_JS/   进入后点击Gwin<br>
+					有任何问题,请发邮件至yk@gwall.cn
+					</p>
+				</li>
+				<li>
+					<h5>查看所有属性</h5>
+					<p></p>
+					<pre class="prettyprint">
+Gwin.setting = {
+		id:'win0',				//编号
+		type: 'windows',			//目前只接受:windows(窗口模式),progress(进度条模式),message(消息框模式),
+		contextType: 'HTML',			// 内容显示类型.     目前只接受:HTML,ID,URL.
+		//context内容说明:    http:// 或者 HTTP:// 开头且长度大于11的,进行iframe加载.指定ID加载,直接传个对象过来.其他加入给定的内容.
+		context: '请填写内容!',			//根据contextType判断载入内容,context可以是HTML代码,一个ID,一个网址.
+		dom:document,				//传入要显示窗口在哪个界面层的document
+		title: '窗口',				// 标题. 默认'窗口'
+		iconPath:'',				//图片所在文件夹,根据不同框架中位置来设置图片位置.
+		titleIcon: 'gwall.gif',     		// 标题栏左边的小图标
+		showbt: true,				//是否显示按钮栏
+		buttons: null,				// 自定义按钮buttons:[{lable:xxxx,click:function}...] 注:按钮的id会自动加上当前窗口id,格式:按钮ID_窗口ID
+		ok: null,				// 确定按钮回调函数				
+		cancel: null,				// 取消按钮回调函数				
+		init: null,				// 对话框初始化后执行的函数
+		loadingmsg:'正在载入...',		// 设置载入数据时候的提示内容.
+		autoLoad: true,				// 默认是自己载入完成后,就马上显示内容.此项为JSF中功能所设置.如:先弹出窗口,需要等带ajax设置后,在显示内容.这样,这里就设置为false,自己调用方法:setLoadok( id )后就开始显示内容
+		closefront: null,			// 对话框关闭前执行的函数			
+		closeafter: null,			// 对话框关闭后执行的函数			
+		okLable: '确定',			// 确定按钮文本. 默认'确定'
+		cancelLable: '取消',			// 取消按钮文本. 默认'取消'		
+		width: 300,				// 内容宽度
+		height: 150,				// 内容高度
+		minWidth: 200,				// 最小宽度限制
+		minHeight: 10,				// 最小高度限制		
+		scrolling: 'no',			// iframe中是否出现滚动条.默认为没有滚动条,如果需要,请设置这个参数:  | no
+		iframeOnload:null,			// contextType=URL时候会创建iframe,此函数是iframe的onload事件.
+		lock: false,				// 是否开启锁屏		
+		background: '#7E7E7E',			// 锁屏的背景颜色		
+		icon: null,				// 设置显示图标类型,支持:Y,X,!,?,error,success,confirm,prompt其中一种
+		bigIcon: false,				// 是否大图标
+		left: 0,				// 内部用于记录位置
+		top: 0,					// 内部用于记录位置
+		winState:{min:false,max:false,hide:false,show:false,focus:false},	// 窗口的状态值:min(最小化)max(最大化)hide(隐藏)show(显示)focus(焦点)
+		minRese:null,				// 最小化还原的回调函数
+		maxRese:null,				// 最大化还原的回调函数
+		maxfront:null,				// 最大化前,回调函数
+		maxafter:null,				// 最大化后,回调函数
+		minfront:null,				// 最小化前,回调函数
+		minafter:null,				// 最小化后,回调函数
+		max: true,                  		// 是否显示最大化按钮
+		min: true,                 		// 是否显示最小化按钮
+		close: true,				// 是否显示关闭按钮
+		resize: true,				// 是否允许用户调节尺寸----------------------------------------
+		drag: true, 				// 是否允许用户拖动位置	
+		progressTime: 0,			// 显示进度条的时间,0表示一直显示,调用者自己关闭它.秒为单位. 当此项不为0,超时函数为null,默认自动超时关闭.
+		progressMsg:'',				// 进度条提示信息
+		progressTimeOut: null			// 如果设置了时间,当显示进度条的时间超过了就执行的函数.		当此项为null,并设置了时间,默认自动超时关闭.
+};
+					</pre>	
+				</li>
+				<li>
+					<h5>提供的方法</h5>
+					<p>id为新建窗口时候定义的id</p>
+					<pre class="prettyprint">
+					
+Gwin.reloadWin(id);					//刷新指定id的窗口,该窗口必须为iframe加载.
+Gwin.getWin(id);					//获取窗口配置
+Gwin.getObjById( winId,id );				//从指定winID窗口根据id取对象
+Gwin.setObjById(winId, id , name , value);		//设置winID窗口中的对象ID=id的name属性为value
+Gwin.setLoadok(id);					//设置窗口载入完成.
+Gwin.alert(title,context,type,dom);			//提示框
+Gwin.confirm(id,title,context,type,dom,buttons);	//询问对话框
+Gwin.progress(msg,time,dom);				//进度条
+Gwin.open(config);					//根据config配置进行生成窗口.
+Gwin.show(id);						//显示窗口
+Gwin.hide(id);						//隐藏窗口
+Gwin.setZindex(winObj);					//设置窗口对象为活动对象,当前对象,得到焦点,最上显示.
+Gwin.min(id);						//最小化
+Gwin.res(id);						//最小化还原
+Gwin.max(id);						//最大化
+Gwin.rese(id);						//最大化还原	
+Gwin.close(id);						//关闭一个窗口
+					</pre>	
+				</li>
+				<li>
+					<h5>属性</h5>
+					<p></p>
+					<pre class="prettyprint">
+					
+Gwin.focusWin;						//获得当前活动窗口配置.
+Gwin.winCount;						//已经打开的窗口数量.
+Gwin.winList;						//所有窗口配置.根据ID进行取值.
+					</pre>	
+				</li>
+			</ol>
+		</div>
+</body>
+</html>

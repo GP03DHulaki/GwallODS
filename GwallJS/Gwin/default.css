@@ -1,0 +1,110 @@
+@charset "utf-8";
+.win_background{position:absolute;top:0;left:0;filter:alpha(opacity=25);-moz-opacity:0.5;opacity: 0.5;}
+.div_title{width:100%;cursor:move;}
+.div_menu{}
+.div_context{align:center;text-align:center;width:100%;overflow:auto;}
+.div_button{width:100%;height:22px;text-align:center;background:#EDF2FA;padding: 0px;}
+/*改变大小*/
+.RightDown,.LeftDown,.LeftUp,.RightUp,.LeftUp1,.LeftUp2,.RightDown1,.RightDown2,
+	.LeftDown1,.LeftDown2,.RightUp1,.RightUp2{
+	position: absolute;	background: #828282;width: 4px;height:4px;z-index:9999;font-size: 0;
+	filter:alpha(opacity=30);-moz-opacity:0.4;opacity: 0.4;	
+}
+.Right,.Left{
+	position: absolute;	background: #666666;width: 6px;height:100%;z-index:9999;font-size: 0;
+	filter:alpha(opacity=30);-moz-opacity:0.4;opacity: 0.4;
+}
+.Up,.Down{
+	position: absolute;	background: #666666;width: 100%;height:6px;z-index:9999;font-size: 0;
+	filter:alpha(opacity=30);-moz-opacity:0.4;opacity: 0.4;
+}
+.LeftDown,.RightUp {cursor: ne-resize;}
+.RightDown,.LeftUp {cursor: nw-resize;}
+.Right,.Left{cursor: e-resize;}
+.Up,.Down {cursor: n-resize;}
+.RightDown {bottom:-3px;right:-5px;}
+.RightDown1 {bottom:-4px;right:-4px;}
+.RightDown2 {bottom:-5px;right:-3px;}
+.LeftDown {bottom: -3px;left: -5px;}
+.LeftDown1 {bottom: -4px;left: -4px;}
+.LeftDown2 {bottom: -5px;left: -3px;}
+.RightUp {top: -3px;right: -5px;}
+.RightUp1 {top: -4px;right: -4px;}
+.RightUp2 {top: -5px;right: -3px;}
+.LeftUp {top: -3px;left: -5px;}
+.LeftUp1 {top: -4px;left: -4px;}
+.LeftUp2 {top: -5px;left: -3px;}
+.Right {right: -6px;top: -1}
+.Left {left: -6px;top: -1}
+.Up {top: -6px;left: -1}
+.Down {bottom: -6px;left: -1}
+
+
+
+/*消息框*/
+.message{align:center;text-align:center;padding:10px;background:#FFFFFF;}
+.msgText{text-indent:2em;text-align:left;font-size:12px;padding-left:24px;}
+/*标题栏 图标,标题,*/
+.title_left{float:left;width:auto;height:auto;padding-top:1px;}
+.title_right{float:right;text-align:right;width:auto;height:auto;padding-top:1px;margin-right:1px;}
+.title_icon{vertical-align:middle;margin-right:4px;}/*cursor:hand;*/
+.title_name{vertical-align:middle;width:auto;font-size:12px;font-weight:bold;}
+/* 标题栏 控制按钮图标 */
+.button_min{float:left;background-image:url(icons/blue_s.png);background-position:127px -55px;width:20px;height:20px;}
+.button_res{float:left;background-image:url(icons/blue_s.png);background-position:67px -55px;width:20px;height:20px;}
+.button_max{float:left;background-image:url(icons/blue_s.png);background-position:107px -55px;width:20px;height:20px;}
+.button_rese{float:left;background-image:url(icons/blue_s.png);background-position:67px -55px;width:20px;height:20px;}
+.button_close{float:left;background-image:url(icons/blue_s.png);background-position:87px -55px;width:20px;height:20px;}
+/*标题栏 控制按钮图标 鼠标经过后切换图标*/
+.button_min2{float:left;background:url(icons/blue_s.png);background-position:127px 0px;width:20px;height:19px;}
+.button_res2{float:left;background:url(icons/blue_s.png);background-position:67px 0px;width:20px;height:19px;}
+.button_max2{float:left;background:url(icons/blue_s.png);background-position:107px 0px;width:20px;height:19px;}
+.button_rese2{float:left;background:url(icons/blue_s.png);background-position:67px 0px;width:20px;height:19px;}
+.button_close2{float:left;background:url(icons/blue_s.png);background-position:87px 0px;width:20px;height:19px;}
+/*最小化 隐藏菜单,内容,按钮 div*/
+.div_mct_n{display:none;}
+.div_mct_y{display:block;background-color:#FFFFFF;}
+.progress{display:block;}
+.win_progress{z-index:1000;position:absolute;}
+.context_prs{align:center;text-align:center;width:100%;}
+/* 内容加载时候的图片 */
+.loading{z-index:-999;text-align:center;font-size:12px;overflow:hidden;width:100%;height:100%;}
+.loadingImg{width:24px;height:24px;vertical-align:middle;margin-right:5px;}
+.progressImg{width:100%;vertical-align:middle;}
+/*字体*/
+.context_prs,.div_context,.div_title,.div_button input{font:12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;}
+
+/*Gwin弹出窗口皮肤:浅FCE1CC:只改颜色*/
+.Gwin_div_win{z-index:1000;position:absolute;
+BORDER-TOP: #FCBFFF 2px solid;
+BORDER-LEFT: #FCBFFF 2px solid;BORDER-RIGHT: #000000 2px solid; 
+BORDER-BOTTOM: #000000 2px solid;
+}
+/*Gwin弹出窗口皮肤:深#FF01EB到浅#FCBFFF:只改颜色*/
+.Gwin_title{height:20px; font-size:12px; font-weight:bold; color:#DDD; padding-left:0px; border-bottom:1px solid #6da6e1; *background:#DDD;
+background:linear-gradient(top, #FF01EB, #FCBFFF);
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FF01EB), to(#FCBFFF)); 
+background:-moz-linear-gradient(top, #FF01EB, #FCBFFF); 
+background:-o-linear-gradient(top, #FF01EB, #FCBFFF);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF01EB', endColorstr='#FCBFFF'); } 
+.Gwin_title { border-bottom:1px solid #FCBFFF; color:#333333;
+background:linear-gradient(top, #FCBFFF, #FF01EB); 
+background:-moz-linear-gradient(top, #FCBFFF, #FF01EB); 
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FCBFFF), to(#FF01EB));
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FCBFFF', endColorstr='#FF01EB'); }
+/*字体*/
+.context_prs,.div_context,.div_title,.div_button input{font:12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;}
+.buttons{
+	BACKGROUND: url(icons/search_but.gif) no-repeat;
+}
+.button_out {
+	BACKGROUND: url(icons/search_but.gif) no-repeat;
+}
+.button_over{
+	BACKGROUND: url(icons/search_but.gif) no-repeat -50px 0px;
+}
+.buttons,.button_out,.button_over,.buttonsPublic{
+	BORDER-TOP-WIDTH:0px;FONT-WEIGHT:bold;BORDER-LEFT-WIDTH:0px;FONT-SIZE:12px;
+	BORDER-BOTTOM-WIDTH:0px;WIDTH:50px;CURSOR:pointer;COLOR:#333;HEIGHT:22px;
+	BORDER-RIGHT-WIDTH:0px
+}

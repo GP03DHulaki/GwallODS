@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups xmlns="http://www.isdc.ro/wro"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.isdc.ro/wro wro.xsd">
+	<!-- /gwall/* -->
+	<group name="all">
+		<js>/js/Gbase.js</js>
+		<js>/js/Gwallwin.js</js>
+		<css>/css/style.css</css>
+		<css>/GwallJS/Gwin/default.css</css>
+		<group-ref>date</group-ref>
+		<group-ref>gtab</group-ref>
+	</group>
+	
+	<group name="date">
+		<js>/js/DatePicker/WdatePicker.js</js>
+	</group>
+	
+	<group name="gtab">
+		<js>/js/Gtab.js</js>
+		<css>/css/gtab.css</css>
+	</group>
+	
+	<group name="all_gtab">
+		<js>/js/Gbase.js</js>
+		<js>/js/Gwallwin.js</js>
+		<css>/css/style.css</css>
+		<group-ref>date</group-ref>
+		<group-ref>gtab</group-ref>
+	</group>
+	
+	<group name="all_nodate">
+		<js>/js/Gbase.js</js>
+		<js>/js/Gwallwin.js</js>
+		<css>/css/style.css</css>
+	</group>
+</groups>

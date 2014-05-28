@@ -1,0 +1,99 @@
+.loginimg{
+	width:60%;
+	height:100%;
+	margin-left:165px;
+	padding-top:72px\9;
+}
+.clear{clear: both;display: inline\9;}
+body {
+	font-size:12px;
+	MARGIN: 0px; WIDTH: 100%;
+	HEIGHT: 100%;
+	font-family:"宋体", Verdana;
+	font-style:normal;
+}
+a:link { text-decoration:none; color:#1f3a87;}
+a:visited { text-decoration:none; color:#1f3a87;}
+a:hover { text-decoration:none; color:#ff0000;}
+.skin_blue_bg{
+	BACKGROUND-IMAGE: url(blue/images/loginbg.jpg);
+}
+.skin_pink_bg{
+	BACKGROUND-IMAGE: url(pink/images/loginbg.jpg);
+}
+.skin_orange_bg{
+	BACKGROUND-IMAGE: url(orange/images/loginbg.jpg);
+}
+.skin_purple_bg{
+	BACKGROUND-IMAGE: url(purple/images/loginbg.jpg);
+}
+.skin_blue_ct{
+	BACKGROUND-IMAGE: url(blue/images/login_center.jpg);
+}
+.skin_pink_ct{
+	BACKGROUND-IMAGE: url(pink/images/login_center.jpg);
+}
+.skin_orange_ct{
+	BACKGROUND-IMAGE: url(orange/images/login_center.jpg);
+}
+.skin_purple_ct{
+	BACKGROUND-IMAGE: url(purple/images/login_center.jpg);
+}
+.skin_purple_bg,.skin_orange_bg,.skin_pink_bg,.skin_blue_bg,.BackGroundimage {
+	BACKGROUND-ATTACHMENT: fixed;
+	BACKGROUND-REPEAT: no-repeat;
+	BACKGROUND-POSITION: center 50%;
+	POSITION: absolute;
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	TOP: 0px;
+	LEFT: 0px;
+}
+.skin_purple_ct,.skin_orange_ct,.skin_pink_ct,.skin_blue_ct,.pagebody{
+	width: 434px;
+	height: 221px;
+}
+
+.subpic {
+	background:url(../images/loginbg_01.gif) repeat;
+}
+.pagebody1 {
+	width:78%; height:485px;
+	border-bottom:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+.label_1 {
+	float:right;  margin-right:3px;clear:left; margin-top:76px;
+	overflow:hidden; font-size:12px;
+}
+
+.textbox_1 {
+	float:left; padding-left:45px;
+	padding-left:0px\9;
+	clear:right; overflow:hidden;
+}
+
+
+.label_2 {
+	float:right; margin-right:3px; clear:left;
+	overflow:hidden; font-size:12px; margin-top:16px; 
+}
+.textbox_2 {
+	float:left; padding-left:45px;padding-left:0px\9;height:23px;
+	clear:right; overflow:hidden; margin-top:10px;margin-top: -40px\9;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+	.textbox_1{padding-left:125px;margin-top: -6px;}  
+	.textbox_2{padding-left:125px;margin-top: 8px;}
+}
+.label_4 {
+	width:200px;height: 27px;
+	font-size:12px;
+	margin-top:30px;
+	margin-left:-120px;
+	margin-top: -10px\9;
+	position:relative;
+}
+.ok { width:70%; float:left; text-align:right; margin-right:20px; clear:left; overflow:hidden; margin-top:15px; font-size:12px;}
+.back { width:70%; float:right; text-align:left; clear:right;  overflow:hidden; margin-top:15px; font-size:12px;}

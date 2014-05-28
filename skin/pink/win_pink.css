@@ -1,0 +1,71 @@
+@charset "utf-8";
+.win_background{position:absolute;top:0;left:0;filter:alpha(opacity=25);-moz-opacity:0.5;opacity: 0.5;}
+.div_win{z-index:1000;position:absolute;
+BORDER-TOP: #d0ecff 2px solid;
+BORDER-LEFT: #d0ecff 2px solid;BORDER-RIGHT: #000000 2px solid; 
+BORDER-BOTTOM: #000000 2px solid;
+}
+
+.div_title{width:100%;cursor:move;}
+.div_menu{}
+.div_context{align:center;text-align:center;width:100%;overflow:auto;}
+.div_button{width:100%;height:21px;text-align:center;background:#EDF2FA;padding-bottom:2px;}
+/*消息框*/
+.message{align:center;text-align:center;padding:10px;background:#FFFFFF;}
+.msgText{text-indent:2em;text-align:left;font-size:12px;padding-left:24px;}
+/*标题栏 图标,标题,*/
+.title_left{float:left;width:auto;height:auto;padding-top:1px;}
+.title_right{float:right;text-align:right;width:auto;height:auto;padding-top:1px;margin-right:1px;}
+.title_icon{vertical-align:middle;margin-right:4px;}/*cursor:hand;*/
+.title_name{vertical-align:middle;width:auto;font-size:12px;font-weight:bold;}
+/* 标题栏 控制按钮图标 */
+.button_min{float:left;background-image:url(icons/blue_s.png);background-position:127px -55px;width:20px;height:20px;}
+.button_res{float:left;background-image:url(icons/blue_s.png);background-position:67px -55px;width:20px;height:20px;}
+.button_max{float:left;background-image:url(icons/blue_s.png);background-position:107px -55px;width:20px;height:20px;}
+.button_rese{float:left;background-image:url(icons/blue_s.png);background-position:67px -55px;width:20px;height:20px;}
+.button_close{float:left;background-image:url(icons/blue_s.png);background-position:87px -55px;width:20px;height:20px;}
+/*标题栏 控制按钮图标 鼠标经过后切换图标*/
+.button_min2{float:left;background:url(icons/blue_s.png);background-position:127px 0px;width:20px;height:19px;}
+.button_res2{float:left;background:url(icons/blue_s.png);background-position:67px 0px;width:20px;height:19px;}
+.button_max2{float:left;background:url(icons/blue_s.png);background-position:107px 0px;width:20px;height:19px;}
+.button_rese2{float:left;background:url(icons/blue_s.png);background-position:67px 0px;width:20px;height:19px;}
+.button_close2{float:left;background:url(icons/blue_s.png);background-position:87px 0px;width:20px;height:19px;}
+/*最小化 隐藏菜单,内容,按钮 div*/
+.div_mct_n{display:none;}
+.div_mct_y{display:block;background-color:#FFFFFF;}
+.progress{display:block;}
+.win_progress{z-index:1000;position:absolute;}
+.context_prs{align:center;text-align:center;width:100%;}
+/* 内容加载时候的图片 */
+.loading{z-index:-999;text-align:center;font-size:12px;overflow:hidden;width:100%;height:100%;}
+.loadingImg{width:24px;height:24px;vertical-align:middle;margin-right:5px;}
+.progressImg{width:100%;vertical-align:middle;}
+/*字体*/
+.context_prs,.div_context,.div_title,.div_button input{font:12px/1.333 tahoma,arial,\5b8b\4f53,sans-serif;}
+/*标题栏样式*/
+.title{height:20px; font-size:12px; font-weight:bold; color:#DDD; padding-left:0px; border-bottom:1px solid #6da6e1; *background:#DDD;
+background:linear-gradient(top, #87D1F7, #67D1F7);
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#87D1F7), to(#67D1F7)); 
+background:-moz-linear-gradient(top, #87D1F7, #67D1F7); 
+background:-o-linear-gradient(top, #87D1F7, #67D1F7);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#87D1F7', endColorstr='#67D1F7'); } 
+.title { border-bottom:1px solid #67D1F7; color:#333333;
+background:linear-gradient(top, #67D1F7, #87D1F7); 
+background:-moz-linear-gradient(top, #67D1F7, #87D1F7); 
+background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#67D1F7), to(#87D1F7));
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#67D1F7', endColorstr='#87D1F7'); }
+.buttons{
+BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px;FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+}
+.button_out {
+BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde);
+BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+}
+.button_over {
+BORDER-RIGHT: #FF0000 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #FF0000 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px;
+FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#66CCFF);
+BORDER-LEFT: #FF0000 1px solid; CURSOR: hand; PADDING-TOP: 2px; BORDER-BOTTOM: #FF0000 1px solid
+}
